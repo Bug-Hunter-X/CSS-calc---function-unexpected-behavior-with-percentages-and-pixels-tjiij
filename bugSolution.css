@@ -1,0 +1,17 @@
+/* bugSolution.css */
+/*Instead of directly using calc, use a more flexible approach*/
+.container{
+  width: 50%;
+  margin-left: 10px;
+  /*or for other layouts adjust as needed*/
+}
+/*Example of using flexbox or grid system to avoid calc() issues*/
+display: flex;
+flex-direction: row;
+.item{
+  width: 50%;
+  margin-left: 10px;
+}
+/*Using viewport units (vw) for relative sizing*/
+width: calc(50vw - 10px);
+/*Or other layout techniques that avoid such direct calculations*/
